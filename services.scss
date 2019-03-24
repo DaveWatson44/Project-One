@@ -1,0 +1,108 @@
+$serviceHeight: 700px;
+$serviceHeightShort: 400px;
+
+
+
+#main-services{
+  height: 800px;
+  width: 100%;
+  clear: both;
+  // border: 1px solid white;
+  margin: 150px 0 50px 0;
+}
+
+#services-title{
+  margin: 0;
+  padding-bottom: 60px;
+  clear: both;
+  color: white;
+  /* border: 1px solid white; */
+  text-align: center;
+}
+
+.categories{
+  float: left;
+  height: 100%;
+  width: 25%;
+  position: relative;
+  /* border: 1px solid white; */
+}
+
+.arch{
+  background-image: url('./images/sky.jpg');
+  background-size: cover;
+  height: $serviceHeight;
+}
+
+.intDes{
+  background-image: url('./images/house.jpg');
+  background-size: cover;
+  height: $serviceHeight;
+}
+
+.planning{
+  background-image: url('./images/sail.jpg');
+  background-size: cover;
+  height: $serviceHeight;
+}
+
+.consulting{
+  background-image: url('./images/blue.jpg');
+  background-size: cover;
+  height: $serviceHeight;
+}
+
+.overlay{
+  position: absolute;
+  z-index: 2;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+
+.categories h2{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 45%;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+
+  #main-services{
+    height: 1000px;
+    width: 100%;
+    clear: both;
+    // border: 1px solid white;
+    margin: 150px 0 50px 0;
+    // box-sizing: border-box;
+  }
+
+  .categories{
+    float: left;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    /* border: 1px solid white; */
+  }
+
+  .arch{
+    height: $serviceHeightShort;
+  }
+
+  .intDes{
+    height: $serviceHeightShort;
+  }
+
+  .planning{
+    height: $serviceHeightShort;
+  }
+
+  .consulting{
+    height: $serviceHeightShort;
+  }
+
+}

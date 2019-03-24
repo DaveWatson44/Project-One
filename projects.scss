@@ -1,0 +1,103 @@
+#projects-title{
+  margin-top: 200px;
+  clear: left;
+  color: white;
+  height: 50px;
+  /* border: 1px solid white; */
+  text-align: center;
+  @media only screen and (max-width: 1400px) {
+    margin-top: 0px;
+  }
+
+}
+
+.project-canvas{
+  position: relative;
+  height: 700px;
+  /* Change this to 100% at a shorter screen size */
+  width: 60%;
+  background-image: url('./images/tun.jpg');
+  background-size: cover;
+  background-position: 0% 50%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  @media only screen and (max-width: 1400px) {
+    width: 100%;
+    background-position: 50% 50%;
+  }
+
+}
+
+.project-details{
+  height: 200px;
+  width: 350px;
+  background-color: #393D46;
+  position: absolute;
+  z-index: 2;
+  bottom: -50px;
+  right: 30px;
+  color: white;
+  padding-left: 0px;
+}
+
+.project-details h3{
+  margin-left: 30px;
+
+}
+
+.project-details h4{
+  margin-top: 100px;
+  margin-left: 30px;
+
+}
+
+.projects{
+  float: left;
+  height: 15%;
+  width: 33.3%;
+  position: relative;
+
+  /* border: 1px solid white; */
+}
+
+.project-thumbs1{
+  background-image: url('./images/sky.jpg');
+  background-size: cover;
+}
+
+.project-thumbs2{
+  background-image: url('./images/sail.jpg');
+  background-size: cover;
+}
+
+.project-thumbs3{
+  background-image: url('./images/blue.jpg');
+  background-size: cover;
+}
+
+.project-thumbs2 h2{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 55%;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .project-thumbs1{
+    display: none;
+  }
+
+  .project-thumbs2{
+    display: none;
+  }
+
+  .project-thumbs3{
+    display: none;
+  }
+
+  .project-thumbs2 h2{
+    display: none;
+  }
+}

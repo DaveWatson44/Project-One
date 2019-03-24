@@ -1,0 +1,104 @@
+  .intro{
+    height: 600px;
+    color: white;
+    margin-top: 100px;
+    // border: 1px solid white;
+  }
+
+  .intro-pic-section{
+    float: left;
+    height: 500px;
+    width: 50%;
+    /* border: 1px solid blue; */
+    position: relative;
+  }
+
+  .intro-image-frame{
+    height: 450px;
+    width: 350px;
+    border: 10px solid #393D46;
+    opacity: .4;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    right: 260px;
+  }
+
+  .intro-image{
+    height: 380px;
+    width: 500px;
+    /* border: 1px solid yellow; */
+    position: absolute;
+    z-index: 2;
+    top: 115px;
+    right: 200px;
+    background-image: url('./images/blonde.jpg');
+    background-size: 120% 120%;
+    /* background-position: 85% 30%; */
+
+  }
+
+  .intro-para{
+    float: left;
+    width: 600px;
+    height: auto;
+    line-height: 40px;
+    /* border: 1px solid green; */
+  }
+
+  .intro-para h1{
+    display: inline-block;
+  }
+
+   .accentLine{
+    display: inline-block;
+    margin-left: 50px;
+    height: 20px;
+    width: 180px;
+    border-top: 3px solid #393D46;
+  }
+
+  @media only screen and (max-width: 1466px) {
+    .intro{
+      height: auto;
+      margin-top: 100px;
+    }
+
+    .intro-pic-section {
+      display: none;
+    }
+
+    .intro-para{
+      text-align: left;
+      float: none;
+      width: 60%;
+      line-height: 40px;
+      margin: 0 auto;
+    }
+
+    .intro-para h1{
+      display: inline-block;
+    }
+
+    .intro-para h2{
+      margin-top: 50px;
+      display: inline-block;
+    }
+
+    .intro-para .accentLine{
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .intro{
+      height: auto;
+      margin-top: 50px;
+    }
+
+    .intro-para{
+      line-height: 35px;
+      width: 90%;
+      /* border: 1px solid green; */
+    }
+  }
